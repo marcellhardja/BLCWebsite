@@ -27,6 +27,7 @@
   <link href="hamburgers-master/dist/hamburgers.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/animate.min.css">
 
 
   <style>
@@ -278,7 +279,7 @@ figure.effect-lily:hover p {
 
 
       <!--SLIDER-->
-      <div class="slider" id="members">
+      <div class="slider wow slideInLeft" id="members">
         <div class="bg-primary slide" style="overflow:hidden">
           <figure class="effect-lily">
             <img class="img-fluid" src="img/marcell.jpg" alt="img1"/>
@@ -395,8 +396,10 @@ figure.effect-lily:hover p {
     <div class="container">
       <h2 class="text-center mt-0">Our Location</h2>
       <hr class="divider my-4">
+        <div class="wow slideInUp">
           <iframe width="100%" height="500px" id="gmap_canvas" src="https://maps.google.com/maps?q=Pantai%20Carita&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
           </iframe>
+        </div>
         <style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div>
   </section>
 
@@ -426,13 +429,13 @@ figure.effect-lily:hover p {
       <hr class="divider light my-4">
       <div class="row align-items-center justify-content-center no-gutters">
       <div class="col-lg-6 mb-5 mt-3">
-        <div class="slider porto">
+        <div class="slider porto wow fadeInRight">
       <img class="slide bbb" src="img/firstpic.JPG">
       <img class="slide bbb" src="img/pic2.JPG">
         </div>
       </div>
     <div class="col-lg-6 order-lg-first">
-      <div class="mb-0 ml-0 mr-lg-5 text-center text-lg-left">
+      <div class="wow fadeInLeft mb-0 ml-0 mr-lg-5 text-center text-lg-left">
         <p>Our Activities is blabla bla bla bla blab lab bla  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, doloremque impedit aliquid culpa repellendus cupiditate, magni dicta ipsum ratione sint similique minus repellat vel beatae magnam consequuntur. Voluptate distinctio libero ab repellat numquam eligendi sunt suscipit provident fugit ex perspiciatis, tenetur voluptas dolor, animi qui, sit nobis eveniet. Non debitis illo, aut ad, provident culpa delectus vero nulla nemo esse saepe commodi suscipit nihil. Iure non reprehenderit eligendi animi numquam laboriosam quod commodi maiores earum, facilis aliquid amet labore sequi magnam, ab eius architecto cumque sit asperiores pariatur voluptas illum expedita repudiandae delectus? Dolores esse voluptate aliquid nostrum officia tenetur?</p>
       </div>
     </div>
@@ -445,11 +448,13 @@ figure.effect-lily:hover p {
 
   <!-- Call to Action Section -->
   <section class="page-section bg-secondary" id="registration">
-    <div class="container text-center">
+    <div class="container text-center wow fadeInDown">
       <h1>Committee Registration</h1>
       <hr class="divider my-4">
+      <div class="wow slideInUp">
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScyDeirYEIQ9dwwa3r95EftTgp7LgoWeORKkPFzeNqNiOcCJQ/viewform?embedded=true" width="100%" height="867" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
+  </div>
   </section>
 
   <!-- Contact Section -->
@@ -541,7 +546,10 @@ figure.effect-lily:hover p {
     }
     ],
   });</script>
-
+<script src="js/wow.js"></script>
+<script>
+new WOW().init();
+</script>
 </body>
 
 </html>
